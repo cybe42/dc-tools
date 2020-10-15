@@ -1,18 +1,13 @@
-const chalk = require('chalk');
-const figlet = require('figlet');
 var readline = require('readline');
 var request = require("request");
 var fs = require("fs");
+var colors = require("colors");
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 var credits = ["TheActent","Rand","Gravity","Triquetra"];
-console.log(
-    chalk.yellow(
-        figlet.textSync('dc-tools', { horizontalLayout: 'full' })
-    )
-);
+console.log("      _                  _                     _       \n   __| |   ___          | |_    ___     ___   | |  ___ \n  / _` |  / __|  _____  | __|  / _ \\   / _ \\  | | / __|\n | (_| | | (__  |_____| | |_  | (_) | | (_) | | | \__ \\\n  \\__,_|  \\___|          \\__|  \\___/   \\___/  |_| |___/\n".green);
 console.log("  usercybe/dc-tools \(daha fazlası için credits yaz.\)");
 var cmdinfo = {
     "help": "help <komut>",
@@ -51,11 +46,7 @@ var commands = {
     "clear": (args) => {
         console.clear();
         if(args[1]=="1") {
-            console.log(
-                chalk.yellow(
-                    figlet.textSync('dc-tools', { horizontalLayout: 'full' })
-                )
-            );            
+          console.log("      _                  _                     _       \n   __| |   ___          | |_    ___     ___   | |  ___ \n  / _` |  / __|  _____  | __|  / _ \\   / _ \\  | | / __|\n | (_| | | (__  |_____| | |_  | (_) | | (_) | | | \__ \\\n  \\__,_|  \\___|          \\__|  \\___/   \\___/  |_| |___/".green);
         }
         program();
     },
