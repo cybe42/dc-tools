@@ -7,7 +7,7 @@ var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-var credits = ["TheActent","Rand","Gravity"];
+var credits = ["TheActent","Rand","Gravity","Triquetra"];
 console.log(
     chalk.yellow(
         figlet.textSync('dc-tools', { horizontalLayout: 'full' })
