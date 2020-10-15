@@ -13,7 +13,7 @@ console.log(
         figlet.textSync('dc-tools', { horizontalLayout: 'full' })
     )
 );
-console.log("usercybe/dc-tools \(daha fazlası için credits yaz.\)");
+console.log("  usercybe/dc-tools \(daha fazlası için credits yaz.\)");
 var cmdinfo = {
     "help": "help <komut>",
     "clear": "clear <banner olsunmu [1]>",
